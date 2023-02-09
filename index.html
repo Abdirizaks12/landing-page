@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>my landing page</title>
   </head>
-  <body>
+  <body class="h-screen">
     <nav>
       <a>
         <img />
       </a>
     </nav>
-    <main>
-      <div class="flex p-6 items-center justify-center">
-        <container>
-          <content>
-            <h1>
+    <main >
+      <div class="flex  gap-x-20  items-center justify-center mt-10 mb-12">
+        <div class="left-content mt-12 flex flex-col">
+          <div class="hero-content flex flex-col mt-12" >
+            <h1 class="font-[Epilogue] text-5xl mb-12 font-bold">
               Make <br />
               remote work
-            </h1>
-            <p1
-              >Get your team in sync,no matter your location.<br />streamline
+            </h1> 
+            <p1 class="font-medium text-grey-500 mb-10 text-sm">
+              Get your team in sync,no matter your location.<br />streamline
               processes,create team rituals,and <br />
               watch productivity soar.
             </p1>
-            <button>Learn more</button>
-          </content>
-          <content>
+            <button class="bg-black w-28 rounded-xl py-2.5 px-2 text-white" >Learn more</button>
+          </div>
+          <div class="links mt-28 flex gap-4 justify-start" >
             <a>
-              <img src="./public/images/client-databiz.svg" />
+              <img class="h-4" src="./public/images/client-databiz.svg" />
             </a>
             <a>
-              <img src="./public/images/client-audiophile.svg" />
+              <img class="h-6" src="./public/images/client-audiophile.svg" />
             </a>
             <a>
-              <img src="./public/images/client-meet.svg" />
+              <img  class="h-4"src="./public/images/client-meet.svg" />
             </a>
             <a>
-              <img src="./public/images/client-maker.svg" />
+              <img  class="h-5"src="./public/images/client-maker.svg" />
             </a>
-          </content>
-        </container>
-        <container>
-          <img class="w-full" src="./public/images/image-hero-desktop.png" />
-        </container>
+          </div>
+        </div class="left-content">
+        <div class="max-w-sm h-full">
+          <img class="" src="./public/images/image-hero-desktop.png" />
+        </div>
       </div>
     </main>
   </body>
