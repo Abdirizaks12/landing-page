@@ -12,28 +12,35 @@
 
     <title>my landing page</title>
   </head>
-  <body class="h-screen">
+  <body class="h-screen mx-auto">
     <nav>
       <a>
         <img />
       </a>
     </nav>
     <main >
-      <div class="flex  gap-x-20  items-center justify-center mt-10 mb-12">
-        <div class="left-content mt-12 flex flex-col">
-          <div class="hero-content flex flex-col mt-12" >
-            <h1 class="font-[Epilogue] text-5xl mb-12 font-bold">
+      <div class="md:flex md:flex-row md:gap-x-20 flex flex-col  items-center justify-center mt-10 mb-12">
+        <div class="max-w-sm h-full md:order-2 ">
+        <picture>
+          <source media="(min-width:768px)" srcset="./public/images/image-hero-desktop.png">
+          <source media="(max-width:767px)" srcset="./public/images/image-hero-mobile.png">
+          <img src="./public/images/image-hero-desktop.png" alt="hero" >
+        </picture>
+        </div>
+        <div class="left-content mt-12 flex flex-col items-center justify-center">
+          <div class="hero-content flex  flex-col  md:mt-12" >
+            <h1 class="font-[Epilogue] text-5xl md:mb-12 w-2/3  font-bold">
               Make <br />
               remote work
             </h1> 
-            <p1 class="font-medium text-grey-500 mb-10 text-sm">
-              Get your team in sync,no matter your location.<br />streamline
-              processes,create team rituals,and <br />
+            <p1 class="font-medium text-grey-500 w-2/3 my-10 text-xl md:text-sm">
+              Get your team in sync,no matter your location.streamline
+              processes,create team rituals,and 
               watch productivity soar.
             </p1>
             <button class="bg-black w-28 rounded-xl py-2.5 px-2 text-white" >Learn more</button>
           </div>
-          <div class="links mt-28 flex gap-4 justify-start" >
+          <div class="links md:mt-28 mt-8 flex gap-4 justify-start" >
             <a>
               <img class="h-4" src="./public/images/client-databiz.svg" />
             </a>
@@ -47,10 +54,7 @@
               <img  class="h-5"src="./public/images/client-maker.svg" />
             </a>
           </div>
-        </div class="left-content">
-        <div class="max-w-sm h-full">
-          <img class="" src="./public/images/image-hero-desktop.png" />
-        </div>
+        </div class="left-content"> 
       </div>
     </main>
   </body>
