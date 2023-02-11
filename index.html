@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
 
     <title>my landing page</title>
   </head>
@@ -20,7 +21,7 @@
     </nav>
     <main >
       <div class="md:flex md:flex-row md:gap-x-20 flex flex-col  items-center justify-center mt-10 mb-12">
-        <div class="max-w-sm h-full md:order-2 ">
+        <div class="max-w-md h-full md:order-2 ">
         <picture>
           <source media="(min-width:768px)" srcset="./public/images/image-hero-desktop.png">
           <source media="(max-width:767px)" srcset="./public/images/image-hero-mobile.png">
@@ -28,17 +29,17 @@
         </picture>
         </div>
         <div class="left-content mt-12 flex flex-col items-center justify-center">
-          <div class="hero-content flex  flex-col  md:mt-12" >
-            <h1 class="font-[Epilogue] text-5xl md:mb-12 w-2/3  font-bold">
-              Make <br />
-              remote work
+          <div class="hero-content flex items-center flex-col  md:mt-12" >
+            <h1 class="font-[Epilogue] text-5xl md:mb-12 w-3/3 font-bold">
+              Make 
+              <span class="md:block">remote work</span>
             </h1> 
-            <p1 class="font-medium text-grey-500 w-2/3 my-10 text-xl md:text-sm">
-              Get your team in sync,no matter your location.streamline
-              processes,create team rituals,and 
+            <p1 class="font-medium text-center text-grey-500 w-3/3 max-w-md my-10  text-xl md:text-sm">
+              Get your team in sync,no matter your location.<span class="md:block">Streamline processes, create team rituals, and </span>
+              
               watch productivity soar.
             </p1>
-            <button class="bg-black w-28 rounded-xl py-2.5 px-2 text-white" >Learn more</button>
+            <button class="bg-black md:self-start w-28 rounded-xl py-2.5 px-2 text-white" >Learn more</button>
           </div>
           <div class="links md:mt-28 mt-8 flex gap-4 justify-start" >
             <a>
