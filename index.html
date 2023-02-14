@@ -6,22 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
 
     <title>my landing page</title>
   </head>
   <body class="h-screen mx-auto">
-    <nav>
-      <a>
-        <img />
-      </a>
-    </nav>
+    
+    <Nav class="bg-blue-900" x-data="{navbarOpen = false}">
+      <div class="flex flex-wrap container mx-auto py-2 px-4">
+        <a class="inline-flex p-2 text-xl ">
+          <img src="./public/images/logo.svg"/>
+        </a>
+        <button class="ml-auto inline-flex items-center justify-center  h-10 w-10 text-white lg:hidden rounded:md">
+          <img src="./public/images/icon-menu.svg"/>
+        </button>
+
+        <div class="md:inline-flex lg-w-auto mt-2 lg:mt-0 w-full" :class="{'hidden':!navbarOpen}">
+          <ul class="flex lg:flex-row space-x-2 flex-col space-y-2 lg:space-y-0">
+            <li>
+              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 bg-red-900 rounded-md">Features</a>
+            </li>
+             <li>
+              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md">Company</a>
+            </li>
+             <li>
+              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md">Careers</a>
+            </li>
+             <li>
+              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Nav>
+    
     <main >
       <div class="md:flex md:flex-row md:gap-x-20 flex flex-col  items-center justify-center mt-10 mb-12">
-        <div class="max-w-md h-full md:order-2 ">
+        <div class="max-w-md w=3/3 h-full md:order-2 ">
         <picture>
           <source media="(min-width:768px)" srcset="./public/images/image-hero-desktop.png">
           <source media="(max-width:767px)" srcset="./public/images/image-hero-mobile.png">
