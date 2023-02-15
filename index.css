@@ -1,0 +1,8 @@
+.toggler.active {
+  height: 450px;
+  background: red;
+}
+
+* {
+  outline: 1px gray solid;
+}
