@@ -1,8 +1,35 @@
-.toggler.active {
+/* .toggler.active {
   height: 450px;
   background: red;
-}
-
+} */
+/* 
 * {
   outline: 1px gray solid;
+} */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.menu-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+@media (max-width: 480px) {
+  .menu-items {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+  }
+  .menu-items.active {
+    display: flex;
+  }
 }

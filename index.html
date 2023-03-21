@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
     <title>my landing page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="h-screen mx-auto">
-    
-    
-      <nav class="bg-blue-700 shadow-md" x-data="{navbarOpen:false}">
+  
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a href="#" class="navbar-brand h1">snap</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="# " class="nav-link active">Features</a>
+          </li>
+          <li class="nav-item active">
+            <a href="# " class="nav-link">Company</a>
+          </li>
+          <li class="nav-item active">
+            <a href="# " class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item active">
+            <a href="# " class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+
+    <nav class="bg-blue-700 shadow-md">
       <div class="flex flex-wrap container mx-auto py-2 px-4">
-        <a class="inline-flex p-2 text-xl ">
-          <img src="./public/images/logo.svg"/>
+        <a class="inline-flex p-2 text-xl">
+          <img src="./public/images/logo.svg" />
         </a>
+
         <button
-          class=" nav-toggler inline-flex items-center justify-center w-10 h-10 ml-auto text-white border rounded-md outline-none  lg:hidden focus:outline-none"
-          @click="navbarOpen = !navbarOpen"
-          id=""
-        >         
-         <img src="./public/images/icon-menu.svg"/>
+          class="nav-toggler inline-flex items-center justify-center w-10 h-10 ml-auto text-white border rounded-md outline-none lg:hidden focus:outline-none"
+        >
+          <img src="./public/images/icon-menu.svg" />
         </button>
 
-        <div
-          class=" nav-bar w-full mt-2 lg:inline-flex  lg:w-auto lg:mt-0"
-          :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
-          id="" 
-        
-        >    
-
-         <ul   class="flex lg:flex-row space-x-2 flex-col space-y-2 lg:space-y-0">
+        <div class="nav-bar w-full mt-2 lg:inline-flex lg:w-auto lg:mt-0">
+          <ul
+            class="menu-items flex lg:flex-row space-x-2 flex-col space-y-2 lg:space-y-0"
+          >
             <li>
-              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md">Features</a>
+              <a
+                href="#"
+                class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md"
+                >Features</a
+              >
             </li>
-             <li>
-              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md">Company</a>
+            <li>
+              <a
+                href="#"
+                class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md"
+                >Company</a
+              >
             </li>
-             <li>
-              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md">Careers</a>
+            <li>
+              <a
+                href="#"
+                class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md"
+                >Careers</a
+              >
             </li>
-             <li>
-              <a href="#" class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md">About</a>
+            <li>
+              <a
+                href="#"
+                class="flex px-2 py-4 font-medium text-white hover:bg-blue-800 rounded-md"
+                >About</a
+              >
             </li>
           </ul>
         </div>
       </div>
-    </Nav>
-    
-    <main >
+    </nav> 
+
+   <main >
       <div class="md:flex md:flex-row md:gap-x-20 flex flex-col  items-center justify-center mt-10 mb-12">
         <div class="max-w-md w=3/3 h-full md:order-2 ">
         <picture>
@@ -94,6 +146,4 @@
       </div>
     </main>
   </body>
-</html> 
-
-
+</html>
